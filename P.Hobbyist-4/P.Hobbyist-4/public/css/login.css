@@ -1,0 +1,195 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";*/
+label {
+  cursor: pointer;
+  color: #666; 
+}
+
+label input[type="checkbox"] {
+  display: none; 
+}
+
+label input[type="checkbox"] + .label-text:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px; 
+}
+
+label input[type="checkbox"]:checked + .label-text:before {
+  content: "\f14a";
+  color: #06a3e9; 
+}
+    
+label input[type="checkbox"]:disabled + .label-text {
+  color: #aaa; 
+}
+    
+label input[type="checkbox"]:before {
+  content: "\f0c8";
+  color: #ccc; 
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #26a69a;
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.login__form{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.form__control{
+  display: block;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form__control:focus{
+  outline:none; 
+  border:1px solid #29B6F6;
+  -webkit-box-shadow: 0px 0px 5px  #E91E63;
+  box-shadow: 0px 0px 1px  #29B6F6;
+}
+
+.btn{
+  display: block;
+  border: 1px solid transparent;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline:none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.btn__login{
+  background-color: #ee6e73;
+  color: #fff;
+  font-size: 18px;
+  text-align:center;
+  text-decoration:none;
+  line-height:2.5;
+}
+
+.btn__login:hover{
+  background-color: #fff;
+  color: #E91E63;
+  border: 1px solid #E91E63;
+}
+
+#user{
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAA7UlEQVR4Aa2VCQ2EMBREawELWKgFLKwFLNRCLWABC1jAwF4WsMBy/E1+JsMxSZM8bt70bvi8XneJC8kId1DE08LXzsNCpcnPxR3cjxAgy9uF2YmDEiCJ1QBVjNQmpwGyGDEpDaBiGG5KwLQQmbwzccsFeoAuFgKs18/bWKQ2eb/eNAuzkUqU3FyDk1+Okvwvkes0TzTxd6FHebAAnBiV65NMRgWbUInJ8cMIMuy0hwEFInII+C7MICZDF5pSkI9EzALyqVxc8VCEpUe5LubrEe/QBncZkcYVLIO8wCy1mvtJVNtNaTpfpVSQdqH6ARac3tEPInsoAAAAAElFTkSuQmCC') left 8px center no-repeat;
+  padding-left: 40px;
+}
+
+#password{
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAXCAYAAADpwXTaAAAAuUlEQVR4AcXUUY0DIRCH8bGABSxgYS3UwloYC1g4LVhAwebWAhbo12QeNlzKUkJ6m/ye/sn30AmV3vd7HB56sUPekc4YUVGQkFFxInwS+7GIQi48sm1hJBZQ8Wg343AijcQiTkjHjgp3F0tGOjaLbSMxhfR8NeZtzHbN7UaFXoPNDzotw4ldpCJCJngUxD+XmZReRmMBbkVMbS/rYlgRaw80HzMVuipWoP97zSkWW/oCFr/N5l9jijWe5ji9FMKDOfwAAAAASUVORK5CYII=') left 8px center no-repeat;
+  padding-left: 40px;
+}
+
+.forgot__password{
+  text-decoration: none;
+  color: #4B5052;
+  float: right;
+}
+
+.login__options{
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.form__group{
+  margin-bottom: 15px;
+}
+
+h5{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  line-height: 0.1em;
+  margin: 30px 0 20px; 
+}
+
+h5 span { 
+  background:#fff; 
+  padding:0 10px; 
+}
+
+.social__login{
+  display: flex;
+} 
+
+.social__login a{
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  line-height: 45px;
+  margin: 3px;
+}
+
+.social__login i{
+  margin-right: 10px;
+}
+
+.btn__google{
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn__google:hover{
+  background-color: #fff;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.btn__facebook{
+  background-color: #06a3e9;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn__facebook:hover{
+  background-color: #fff;
+  color: #06a3e9;
+  border: 1px solid #06a3e9;
+}
+
+.signup__link a{
+  text-decoration: none;
+  color: #ee6e73;
+}
+
+.signup__link{
+  font-weight: 600;
+}
+
+.signup__link span{
+  color: #4B5052;
+}

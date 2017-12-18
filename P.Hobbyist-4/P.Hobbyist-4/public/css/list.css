@@ -1,0 +1,39 @@
+.tag-field {
+    margin-top: 20px;
+}
+
+.halign-wrapper {
+    text-align: center;
+}
+
+.halign {
+    display: inline-block;
+}
+
+.list-wrapper {
+    margin-left: 7px;
+}
+
+.card.horizontal.book-card {
+    max-height: 100%;
+}
+
+.card.horizontal .card-content {
+    padding: 10px;
+}
+
+.card.horizontal .card-action {
+    text-align: center;
+    padding: 5px;
+    background-color: #ff5252;
+    color: black;
+}
+
+.card-action a {
+    margin-right: 0px;
+
+}
+
+.textcolor {
+	color: white;
+}

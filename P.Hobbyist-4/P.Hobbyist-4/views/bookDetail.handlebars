@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>A4 bookDetail page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row" id="top">
+                <!-- need to be filled later-->
+                <div class="col-sm-6">
+                    <a href="book.html">
+                        <p>back</p>
+                    </a>
+                </div>
+                <div class="col-sm-6 title">
+                    <p style="text-align:right">Hobbyist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="middle">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51SfTd37PaL.jpg" style="width:80%;height:auto"></img>
+            </div>
+
+            <div class="col-sm-6" id="middle-right">
+                <h2>Book Title</h2>
+                <div class="row" id="middle-right-button">
+                    <div class="col-sm-6">
+                        <a href="reading.html">
+                            <p>Read</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" data-toggle="popover" data-placement="right" data-content="after clicking, delete this book from booklist or history">Delete</a>
+                    </div>
+                </div>
+                <div class="row" id="movie description">
+                    <div class="col-sm-8">
+                        Book description.Example:In his fifth year at Hogwart's, Harry faces challenges at every turn, from the dark threat of He-Who-Must-Not-Be-Named and the unreliability of the government of the magical world to the rise of Ron Weasley as the keeper of the
+                        Gryffindor Quidditch Team. Along the way he learns about the strength of his friends, the fierceness of his enemies, and the meaning of sacrifice.
+                    </div>
+                </div>
+                    <p style="margin-bottom:0px">Tag</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="bottom">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <h4>Available in</h4>
+                <div class="row" id="available web">
+                    <div class="col-sm-2">
+                        <a href="https://www.amazon.com/gp/product/0439358078/ref=s9_acsd_al_bw_c_x_8?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=3CYYH2HQGKRJR6XY3ZVY&pf_rd_r=3CYYH2HQGKRJR6XY3ZVY&pf_rd_t=101&pf_rd_p=a0e6d309-319b-4ca7-8e00-31ca788c1750&pf_rd_p=a0e6d309-319b-4ca7-8e00-31ca788c1750&pf_rd_i=11913537011"
+                            target="_blank">
+                            <p>Paperback</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="https://www.amazon.com/Harry-Potter-Order-Phoenix-Rowling-ebook/dp/B0192CTMXM/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank">
+                            <p>Kindle</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    <div class="container">
+        <div class="dropup row">
+            <div class="col-sm-11"></div>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Setting<span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Books</a></li>
+            </ul>
+        </div>
+    </div>-->
+
+
+    <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" href="movie.html"><i class="material-icons">theaters</i></a></li>
+            <li><a class="btn-floating green" href="book.html"><i class="material-icons">book</i></a></li>
+            <li><a class="btn-floating blue" href="index.html"><i class="material-icons">home</i></a></li>
+        </ul>
+    </div>
+
+    <!-- materialize-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>

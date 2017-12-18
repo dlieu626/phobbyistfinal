@@ -1,0 +1,28 @@
+button#back{
+
+	background-color:#e57373;
+	border:none;
+	/*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:21px;
+	font-weight:200;*/
+
+}
+
+#middle-right{
+	text-align: center;
+}
+
+#movie-description{
+	text-align: center;
+}
+
+#history-img {
+	width:60%;
+	height:auto;
+	margin-left: 60px;
+}
+
+#headerDetail {
+	background-color: #e57373;
+
+}
